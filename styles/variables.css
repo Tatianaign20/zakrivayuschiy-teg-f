@@ -1,1 +1,21 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --pressStart2p-regular: 'PressStart2P-Regular';
+    --inter-variable: 'Inter-Variable';
+    --font-weight-text: 'wght' 400, 'wdth' 0, 'opsz' 0;
+    --font-weight-header: 'wght' 700, 'wdth' 0, 'opsz' 0;
+    --background-image:
+      repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(0,  #d3d3d3 0 2px, transparent 2px 4px),
+      linear-gradient(180deg, #E7E7E7 0.01%, #1A1A1A 100%);
+    --accent-color: #000000;
+    --background-color: #ffffff;
+    --border-color: #000000;
+    --width-block: clamp(375px, 65%, 700px);
+    --stroke-color: #ffffff;
+    --button-color-text: #ffffff;
+    --heart-contour-color: #000000;
+    --heart-main-body-filling-color: #000000;
+    --heart-core-filling-color: #000000;
+    --heart-filling-color: #FF0000;
+}

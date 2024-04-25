@@ -4,3 +4,62 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+    --pressStart2p-regular: 'PressStart2P-Regular';
+    --inter-variable: 'Inter-Variable';
+    --font-weight-text: 'wght' 400, 'wdth' 0, 'opsz' 0;
+    --font-weight-header: 'wght' 700, 'wdth' 0, 'opsz' 0;
+    --background-image:
+      repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(0,  #d3d3d3 0 2px, transparent 2px 4px),
+      linear-gradient(180deg, #E7E7E7 0.01%, #1A1A1A 100%);
+    --accent-color: #000000;
+    --background-color: #ffffff;
+    --border-color: #000000;
+    --width-block: clamp(375px, 65%, 700px);
+    --stroke-color: #ffffff;
+    --button-color-text: #ffffff;
+    --heart-contour-color: #000000;
+    --heart-main-body-filling-color: #000000;
+    --heart-core-filling-color: #000000;
+    --heart-filling-color: #FF0000;
+}
+
+:root.theme-dark {
+    --font-weight-text: 'wght' 465, 'wdth' 0, 'opsz' 0;
+    --font-weight-header: 'wght' 785, 'wdth' 0, 'opsz' 0;
+    --background-image:
+      repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(0,  #000 0 2px, transparent 2px 4px),
+      linear-gradient(180deg, #007F0C 0%, #004306 100%);
+    --accent-color: #00CC14;
+    --background-color: #000000;
+    --border-color: #00CC14;
+    --stroke-color: #000000;
+    --button-color-text: #00CC14;
+    --heart-contour-color: #00CC14;
+    --heart-main-body-filling-color: #00CC14;
+    --heart-core-filling-color: #00CC14;
+    --heart-filling-color: #FF0000;
+  }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --font-weight-text: 'wght' 465, 'wdth' 0, 'opsz' 0;
+        --font-weight-header: 'wght' 785, 'wdth' 0, 'opsz' 0;
+        --background-image:
+          repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
+          repeating-linear-gradient(0,  #000 0 2px, transparent 2px 4px),
+          linear-gradient(180deg, #007F0C 0%, #004306 100%);
+        --accent-color: #00CC14;
+        --background-color: #000000;
+        --border-color: #00CC14;
+        --stroke-color: #000000;
+        --button-color-text: #00CC14;
+        --heart-contour-color: #00CC14;
+        --heart-main-body-filling-color: #00CC14;
+        --heart-core-filling-color: #00CC14;
+        --heart-filling-color: #FF0000;
+    }
+}
