@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --pressStart2p-regular: 'PressStart2P-Regular';
-    --inter-variable: 'Inter-Variable';
+    --font-family-header-buttons: 'PressStart2P';
+    --font-family-content: 'Inter-Variable';
     --font-weight-text: 400;
     --font-weight-header: 700;
     --background-image:

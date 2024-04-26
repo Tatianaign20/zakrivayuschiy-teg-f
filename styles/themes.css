@@ -6,8 +6,8 @@
 */
 
 :root.theme-light {
-    --pressStart2p-regular: 'PressStart2P-Regular';
-    --inter-variable: 'Inter-Variable';
+    --font-family-header-buttons: 'PressStart2P';
+    --font-family-content: 'Inter-Variable';
     --font-weight-text: 'wght' 400, 'wdth' 0, 'opsz' 0;
     --font-weight-header: 'wght' 700, 'wdth' 0, 'opsz' 0;
     --background-image:
