@@ -21,6 +21,7 @@
   font-variation-settings: 'wgth' var(--font-weight-text), 'wdth' 0, 'opsz' 0;
   background: var(--background-image), var(--accent-color); /*не очень поняла, что такое цвет фонового паттерна */
   background-size: cover;
+  max-width: 100vw;
   background-attachment: scroll;
   color: var(--accent-color);
   background-position: center;
