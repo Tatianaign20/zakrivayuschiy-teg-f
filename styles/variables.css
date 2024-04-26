@@ -2,8 +2,8 @@
 :root {
     --pressStart2p-regular: 'PressStart2P-Regular';
     --inter-variable: 'Inter-Variable';
-    --font-weight-text: 'wght' 400, 'wdth' 0, 'opsz' 0;
-    --font-weight-header: 'wght' 700, 'wdth' 0, 'opsz' 0;
+    --font-weight-text: 400;
+    --font-weight-header: 700;
     --background-image:
       repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
       repeating-linear-gradient(0,  #d3d3d3 0 2px, transparent 2px 4px),

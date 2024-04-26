@@ -18,7 +18,7 @@
   min-block-size: 100dvb;
   font-family: var(--inter-variable), sans-serif;
   font-size: 18px;
-  font-variation-settings: var(--font-weight-text);
+  font-variation-settings: 'wgth' var(--font-weight-text), 'wdth' 0, 'opsz' 0;
   background: var(--background-image);
   background-size: cover;
   background-attachment: scroll;
@@ -73,7 +73,7 @@
   cursor: pointer;
 }
 
-.theme-menu__button:disabled::before  {
+.theme-menu__button:disabled::before {
   content: "▶";
   inline-size: 5px;
   opacity: 0.6;
@@ -141,7 +141,7 @@
 
 .card__title {
   font-size: inherit;
-  font-variation-settings: var(--font-weight-header);
+  font-variation-settings: 'wght' var(--font-weight-header), 'wdth' 0, 'opsz' 0;
   line-height: 117%;
   padding: 4px 8px;
 }
@@ -353,7 +353,7 @@
 }
 
 /* Состояние кнопки */
-.save-button-block::before { 
+.save-button-block::before {
   content: '';
   position: absolute;
   top: 0;
