@@ -21,7 +21,7 @@
   font-variation-settings: 'wgth' var(--font-weight-text), 'wdth' 0, 'opsz' 0;
   background: var(--background-image), var(--accent-color); /*не очень поняла, что такое цвет фонового паттерна */
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   color: var(--accent-color);
 }
 
@@ -251,7 +251,8 @@
   cursor: pointer;
   height: 39px;
   max-width: 39px;
-  transition-duration: 0.3s ease;
+  padding: 0;
+  transition: 0.3s ease;
 }
 
 .card__like-button {
@@ -296,9 +297,9 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.card__like-button.button__view:hover::before {
+.button__view:hover::before {
   transform: translateX(0);
-}  /* Как раз в прошлый раз это реализовала через общий класс .button__view, второй класс для каждой кнопки нужен для указания размера, тогда совокупность (.button__view с инд. размерами) как раз дает нужный эффект на каждой кнопке*/
+}
 
 .button__view:focus-visible {
   outline: -webkit-focus-ring-color none;
@@ -340,10 +341,6 @@
 }
 
 /* Состояние кнопки */
-
-.save-button-block.button__view:hover::before {
-  transform: translate(0);
-}
 
 .save-button__floppy {
   display: block;
@@ -404,8 +401,4 @@
 .dialog-button {
   inline-size: 100%;
   height: 38px;
-}
-
-.dialog-button.button__view:hover::before {
-  transform: translateX(0);
 }

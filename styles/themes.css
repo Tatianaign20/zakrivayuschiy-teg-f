@@ -8,8 +8,8 @@
 :root.theme-light {
     --font-family-header-buttons: 'PressStart2P';
     --font-family-content: 'Inter-Variable';
-    --font-weight-text: 'wght' 400, 'wdth' 0, 'opsz' 0;
-    --font-weight-header: 'wght' 700, 'wdth' 0, 'opsz' 0;
+    --font-weight-text: 400;
+    --font-weight-header: 700;
     --background-image:
       repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
       repeating-linear-gradient(0,  #d3d3d3 0 2px, transparent 2px 4px),
@@ -27,8 +27,8 @@
 }
 
 :root.theme-dark {
-    --font-weight-text: 'wght' 465, 'wdth' 0, 'opsz' 0;
-    --font-weight-header: 'wght' 785, 'wdth' 0, 'opsz' 0;
+    --font-weight-text: 465;
+    --font-weight-header: 785;
     --background-image:
       repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
       repeating-linear-gradient(0,  #000 0 2px, transparent 2px 4px),
@@ -46,8 +46,8 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --font-weight-text: 'wght' 465, 'wdth' 0, 'opsz' 0;
-        --font-weight-header: 'wght' 785, 'wdth' 0, 'opsz' 0;
+        --font-weight-text: 465;
+        --font-weight-header: 785;
         --background-image:
           repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
           repeating-linear-gradient(0,  #000 0 2px, transparent 2px 4px),
