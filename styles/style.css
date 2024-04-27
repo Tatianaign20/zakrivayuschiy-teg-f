@@ -72,6 +72,8 @@
   position: relative;
   margin-left: 7px;
   cursor: pointer;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 .theme-menu__button:disabled::before {
@@ -92,9 +94,7 @@
 
 .theme-menu__button:hover {
   opacity: 0.6;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-}  /* вверху animation.css написано: Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like. Т.е. все стили с transition  туда переносить необязательно, кроме того, это неудобно, когда 1 состояние написано в index, а второе в другом файле*/
+}
 
 .theme-menu__button::after {
   content: '';
@@ -156,7 +156,7 @@
   display: block;
   position: absolute;
   z-index: 1;
-  left: clamp(268px, 10.0379rem + 28.6385vw, 573px);
+  right: clamp(13px, 0.5484rem + 1.1268vw, 25px);
   top: 25px;
   font-family: var(--font-family-header-buttons);
   font-size: 14px;
@@ -251,6 +251,7 @@
   cursor: pointer;
   height: 39px;
   max-width: 39px;
+  transition-duration: 0.3s ease;
 }
 
 .card__like-button {
@@ -265,6 +266,7 @@
   overflow: hidden;
   cursor: pointer;
   position: relative;
+  transition-duration: 0.3s;
 }
 
 .button__text {
@@ -296,12 +298,11 @@
 
 .card__like-button.button__view:hover::before {
   transform: translateX(0);
-}
+}  /* Как раз в прошлый раз это реализовала через общий класс .button__view, второй класс для каждой кнопки нужен для указания размера, тогда совокупность (.button__view с инд. размерами) как раз дает нужный эффект на каждой кнопке*/
 
 .button__view:focus-visible {
   outline: -webkit-focus-ring-color none;
   box-shadow: 2px 2px 0px 0px var(--accent-color);
-  transition-duration: 0.3s;
 }
 
 .button__view:focus {
@@ -311,7 +312,6 @@
 .card__icon-button:focus-visible {
   outline: -webkit-focus-ring-color none;
   border: 2px solid var(--accent-color);
-  transition-duration: 0.3s ease;
 }
 
 .card__icon-button:focus {
