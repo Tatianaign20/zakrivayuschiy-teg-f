@@ -1,1 +1,8 @@
-https://github.com/Tatianaign20/zakrivayuschiy-teg-f.git
+# Закрывающий тег
+Учебный проект.
+
+## Стек
+HTML, CSS.
+
+## Ссылка
+https://tatianaign20.github.io/zakrivayuschiy-teg-ff/
